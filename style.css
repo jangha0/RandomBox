@@ -8,9 +8,14 @@ body {
     text-align: center;
 }
 
+.image-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
 .wrap {
-    width: 650px;
-    margin: 0px auto 0px auto;
+    width: 500px;
+    margin: 0 auto;
     height: 200px;
 
     display: flex;
@@ -41,14 +46,33 @@ button {
 }
 
 #ch-image {
+    /* width: auto; */
     height: 500px;
+    /* margin: 0 auto; */
     object-fit: cover;
-    filter: brightness(0);
     transition-timing-function: cubic-bezier(0.67, -0.42, 0.78, 1.16);
     transition-duration: 5s;
 }
 
-#ch-image:hover {
+/* #ch-image:hover {
     filter: none;
     transition-duration: 0.5s;
+} */
+
+
+@media (max-width: 600px) {
+    h1 {font-size: 25px;
+        margin: 0 auto;
+    }
+    
+    p {font-size: 18px;
+        margin: 10px auto;
+    }
+    #ch-image {
+        transform: scale(0.8);
+    }
+    .wrap {
+        margin-top: 50px;
+        height: 100px;
+    }
 }
