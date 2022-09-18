@@ -69,7 +69,7 @@ button {
         margin: 10px auto;
     }
     #ch-image {
-        transform: scale(0.8);
+        height: 300px;
     }
     .wrap {
         width: 300px;
