@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #FB6D02;
+    background-color: #FFCB05;
     text-align: center;
 }
 
@@ -16,12 +16,21 @@ body {
 .wrap {
     width: 500px;
     margin: 0 auto;
-    height: 200px;
+    height: 150px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-img {
+    width: 30px;
 }
 
 h1 {
@@ -54,12 +63,6 @@ button {
     transition-duration: 5s;
 }
 
-/* #ch-image:hover {
-    filter: none;
-    transition-duration: 0.5s;
-} */
-
-
 @media (max-width: 600px) {
     h1 {font-size: 22px;
         margin: 0 auto;
@@ -73,8 +76,8 @@ button {
     }
     .wrap {
         width: 300px;
-        margin-top: 50px;
-        height: 100px;
+        margin-top: 12px;
+        height: 120px;
     }
 
     .image-container {
