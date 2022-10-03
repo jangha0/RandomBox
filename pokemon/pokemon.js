@@ -1,11 +1,22 @@
-const characters = ["0.png", "1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png", "14.png", "15.png"];
+let characters = [];
+for (i = 1; i <= 9; i++)
+{ characters.push('00' + i);
+}
+for (i = 10; i <= 99; i++)
+{ characters.push('0' + i);
+}
+for (i = 100; i <=905; i++)
+{ characters.push(i);
+}
+
 const chosenCharacter = characters[Math.floor(Math.random() * characters.length)];
 const chosenImage = document.createElement("img")
 const imageContainer = document.querySelector(".image-container")
 
 chosenImage.id = "ch-image";
-chosenImage.src = `img/${chosenCharacter}`;
+chosenImage.src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${chosenCharacter}.png`;
 imageContainer.appendChild(chosenImage);
+console.log(chosenCharacter);
 
 // chosenImaga.style.filter = "brightness(0)";
 chosenImage.style.filter = "brightness(0)";
@@ -16,4 +27,3 @@ function mouseover() {
     chosenImage.style.filter = "none";
     chosenImage.style.transitionDuration = "0.5s";
 }
-
