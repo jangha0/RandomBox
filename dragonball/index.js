@@ -7,7 +7,6 @@ chosenImage.id = "ch-image";
 chosenImage.src = `../img/${chosenCharacter}`;
 imageContainer.appendChild(chosenImage);
 
-// chosenImaga.style.filter = "brightness(0)";
 chosenImage.style.filter = "brightness(0)";
 
 chosenImage.addEventListener("mouseover",mouseover);
