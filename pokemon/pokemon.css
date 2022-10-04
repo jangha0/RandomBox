@@ -63,6 +63,13 @@ button {
     transition-duration: 5s;
 }
 
+.numbering {
+    color: white;
+    font-size: 16px;
+    text-decoration: overline;
+    text-shadow: 1px 1px 8px rgb(68, 68, 68);
+}
+
 @media (max-width: 600px) {
     h1 {font-size: 22px;
         margin: 0 auto;
@@ -83,5 +90,9 @@ button {
     .image-container {
         width: 300px;
         margin: 0 auto;
+    }
+
+    .numbering {
+        font-size: 13px;
     }
 }
